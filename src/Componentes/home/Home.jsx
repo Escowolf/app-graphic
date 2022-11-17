@@ -5,8 +5,9 @@ function Home (){
     return(
         <>
         <h1>App Graphic</h1>
-        <Leaflet/>
         <Recharts/>
+        <h1>Fortaleza</h1>
+        <Leaflet/>
         </>
     );
 }

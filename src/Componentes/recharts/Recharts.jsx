@@ -3,7 +3,7 @@ import {
   CartesianGrid } from 'recharts';
 import './Recharts.css';
 
-// Sample chart data
+//TODO converter csv para array e utilizar os dados;
 const pdata = [
   { hora: '10h', ocorrencia: 11},
   { hora: '11h', ocorrencia: 15},
