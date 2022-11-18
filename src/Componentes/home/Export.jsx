@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { read, utils, writeFile } from 'xlsx';
 
 const Export = () => {
-    const [movies, setMovies] = useState([]);
+    const [data, setData] = useState([]);
 
     const handleImport = ($event) => {
         const files = $event.target.files;
@@ -16,7 +16,7 @@ const Export = () => {
 
                 if (sheets.length) {
                     const rows = utils.sheet_to_json(wb.Sheets[sheets[0]]);
-                    setMovies(rows)
+                    setData(rows)
                 }
             }
             reader.readAsArrayBuffer(file);
@@ -33,7 +33,7 @@ const Export = () => {
         const wb = utils.book_new();
         const ws = utils.json_to_sheet([]);
         utils.sheet_add_aoa(ws, headings);
-        utils.sheet_add_json(ws, movies, { origin: 'A2', skipHeader: true });
+        utils.sheet_add_json(ws, data, { origin: 'A2', skipHeader: true });
         utils.book_append_sheet(wb, ws, 'Report');
         writeFile(wb, 'Relatório.xlsx');
     }

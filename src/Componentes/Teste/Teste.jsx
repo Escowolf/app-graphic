@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Papa from "papaparse";
 
 function Teste() {
@@ -16,6 +15,7 @@ function Teste() {
         results.data.map((d) => {
           rowsArray.push(Object.keys(d));
           valuesArray.push(Object.values(d));
+          return results;
         });
 
         // Parsed Data Response in array format
@@ -26,7 +26,6 @@ function Teste() {
 
   return (
     <div>
-      {/* File Uploader */}
       <input
         type="file"
         name="file"
