@@ -1,7 +1,7 @@
 import React from "react";
 import { TileLayer, Popup, Marker, MapContainer} from "react-leaflet";
 import './Leaflet.css';
-import'leaflet/dist/leaflet.css'
+import'leaflet/dist/leaflet.css';
 
 const position = [-3.7407515413204466, -38.49789735930933];
 
@@ -16,7 +16,7 @@ function Leaflet() {
         />
         <Marker position={position}>
           <Popup>
-            :)
+            ":)"
           </Popup>
         </Marker>
       </MapContainer>

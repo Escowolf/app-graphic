@@ -4,3 +4,28 @@
     background-color: black;
     color:aliceblue;
 }
+
+.data_export{
+    padding: 1rem;
+    border-radius:10%;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.404);
+    margin:1rem;
+    position: relative;
+    right:35%;
+    top:10px;
+}
+
+.data_export:hover{
+    padding: 1rem;
+    border-radius:10%;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.514);
+    background-color: black;
+    color: aliceblue;
+    font-weight: 200;
+    margin:1rem;
+    position: relative;
+    right:35%;
+    top:10px;
+}
